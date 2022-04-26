@@ -2,6 +2,7 @@ import { makeStyles } from 'tss-react/mui';
 import clsx from 'clsx';
 import MuiTableHead from '@mui/material/TableHead';
 import React, { useState } from 'react';
+import TablePagination from './TablePagination';
 import TableHeadCell from './TableHeadCell';
 import TableHeadRow from './TableHeadRow';
 import TableSelectCell from './TableSelectCell';
@@ -24,6 +25,8 @@ const useStyles = makeStyles({ name: 'MUIDataTableHead' })(theme => ({
 }));
 
 const TableHead = ({
+  changePage,
+  changeRowsPerPage,
   columnOrder = null,
   columns,
   components = {},
@@ -32,6 +35,9 @@ const TableHead = ({
   draggableHeadCellRefs,
   expandedRows,
   options,
+  page,
+  rowCount,
+  rowsPerPage,
   selectedRows,
   selectRowUpdate,
   setCellRef,
