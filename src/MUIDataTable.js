@@ -386,6 +386,7 @@ class MUIDataTable extends React.Component {
     caseSensitive: false,
     consoleWarnings: true,
     disableToolbarSelect: false,
+    displayPaginationOnTop: false,
     download: true,
     downloadOptions: {
       filename: 'tableDownload.csv',
