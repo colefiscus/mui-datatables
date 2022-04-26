@@ -181,6 +181,7 @@ class MUIDataTable extends React.Component {
       expandableRowsHeader: PropTypes.bool,
       expandableRowsOnClick: PropTypes.bool,
       disableToolbarSelect: PropTypes.bool,
+      displayPaginationOnTop: PropTypes.bool,
       download: PropTypes.oneOf([true, false, 'true', 'false', 'disabled']),
       downloadOptions: PropTypes.shape({
         filename: PropTypes.string,
