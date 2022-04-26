@@ -2014,7 +2014,10 @@ class MUIDataTable extends React.Component {
                   data={displayData}
                   count={rowCount}
                   page={page}
+                  changePage={this.changePage}
+                  rowCount={rowCount}
                   rowsPerPage={rowsPerPage}
+                  changeRowsPerPage={this.changeRowsPerPage}
                   selectedRows={selectedRows}
                   selectRowUpdate={this.selectRowUpdate}
                   toggleSort={this.toggleSortColumn}
