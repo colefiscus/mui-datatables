@@ -111,6 +111,17 @@ const TableHead = ({
         [classes.responsiveSimple]: options.responsive === 'simple',
         [classes.main]: true,
       })}>
+      {options.paginationOnTop &&
+        <TablePagination 
+          count={rowCount}
+          page={page}
+          rowsPerPage={rowsPerPage}
+          changeRowsPerPage={changeRowsPerPage}
+          changePage={changePage}
+          component={'div'}
+          options={options}
+        />  
+      }
       <TableHeadRow>
         <TableSelectCell
           setHeadCellRef={setCellRef}
