@@ -111,7 +111,7 @@ const TableHead = ({
         [classes.responsiveSimple]: options.responsive === 'simple',
         [classes.main]: true,
       })}>
-      {options.paginationOnTop &&
+      {options.displayPaginationOnTop &&
         <TablePagination 
           count={rowCount}
           page={page}
