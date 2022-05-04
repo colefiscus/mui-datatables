@@ -3,12 +3,12 @@
   "version": "4.2.2",
   "description": "Datatables for React using Material-UI",
   "main": "dist/index.js",
+  "engines": {
+    "node": ">=10.17"
+  },
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": "12.22.12"
-  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server -d --progress --colors",
     "test": "cross-env NODE_ENV=test mocha --require @babel/register test/**/*.test.js",
